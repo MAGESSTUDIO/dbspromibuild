@@ -1,0 +1,4369 @@
+{
+  "activities": [
+    {
+      "name": "<size=48><b>BLOCKCHAIN</b></size>\n(How authentication & authorisation is done in blockchain space)",
+      "gridNumber": "1",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nCryptocurrencies like Bitcoin and Dogecoin have seized the limelight with spectacular returns for early believers (and well, Elon Musk'Ss tweets), but the real star at the end of the day may very well be the underlying Blockchain technology instead.\n\nMore than a handful of financial institutions see huge potential in the use of Blockchain, and one of these FI includes our bank. Just April this year, DBS, JP Morgan and Temasek announced a blockchain-based settlement platform, named Partior to facilitate the conduct of real-time cross-border transactions.\n\nDo you know exactly is Blockchain and why is it touted to be a more secure system of recording information? Is there really no way to change, hack, or cheat the system with Blockchain?",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. What is Blockchain?</b>",
+          "dropdownContent": [
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": true,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "Check out the video below for a succinct introduction to Blockchain.",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. How does a transaction get into blockchain?</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<b>Authentication</b>\n\nThe original blockchain was designed to operate without a central authority (i.e. with no bank or regulator controlling who transacts), but transactions still have to be authenticated.\n\nThis is done using cryptographic keys, a string of data (like a password) that identifies a user and gives access to their \"account\" or \"wallet\" of value on the system.\n\nEach user has their own private key and a public key that everyone can see. Using them both creates a secure digital identity to authenticate the user via digital signatures and to \"unlock\" the transaction they want to perform.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": true,
+              "image": "Blockchain/Blockchain.png",
+              "video": "",
+              "imageSource": "Source: Euromoney",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b>Authentication</b>\n\nOnce the transaction is agreed between the users, it needs to be approved, or authorised, before it is added to a block in the chain.\n\nFor a public blockchain, the decision to add a transaction to the chain is made by consensus. This means that the majority of \"nodes\" (or computers in the network) must agree that the transaction is valid. The people who own the computers in the network are incentivised to verify transactions through rewards. This process is known as \"proof of work\".",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>3. So what is the risk? </b>",
+          "dropdownContent": [
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": true,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "Understandingproof-of-work and 51% attack.",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> Once a data is recorded inside a blockchain, it becomes difficult to change it because all the blocks are linked together by the hash, or \"fingerprint\" of its previous block, and changing something in a block will cause its hash to change. As such, hashing ensures the security of the blockchain.",
+          "options": [
+            {
+              "option": "True"
+            },
+            {
+              "option": "False"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": "<#3ab87a>False</color>\nHash itself is not enough to prevent tampering. High computing power can facilitate the recalculation of hash easily. Hence, it also leverages on algorithm such as proof-of-work as well as the use of distributed ledger concept."
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q2.</b></color> With blockchain, it is impossible to change, hack or cheat the system.",
+          "options": [
+            {
+              "option": "True"
+            },
+            {
+              "option": "False"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": "<#3ab87a>False</color>\nIf a group of miners gain control of more than 50% of the network, they can control what is being recorded. This is known as 51% attack."
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>Reputational Risk</b></size>",
+      "gridNumber": "2",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nPer the Group Reputational Risk Management Policy, DBS Group's reputation is its most valuable asset and we adopt a zero tolerance mindset for reputational risk that can endanger our franchise.\nWhy are we so uptight about reputation? How exactly does reputational risk come about, and how can we manage it?",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. Why are we so concerned about reputation?</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<i>The Story</i>\n<size=30>How a Company Lost its Way</size>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "Boeing's 737 MAX was grounded for 20 months after two high-profile international crashes just five months apart, in Oct 2018 and Mar 2019, saw 346 passengers and crew killed.\n\nThis unprecedented aviation fiasco could be attributed to MAX's MCAS. MCAS, or Manoeuvring Characteristics Augmentation System, is an onboard flight-control software designed to tilt the nose of the plane down when it detects that the angle of the ascent is too steep to prevent the plane from stalling.\n\nAs it turned out, the badly designed and implemented MCAS was merely the manifestation of a deeper and more insidious cultural issue at Boeing where profit is valued over safety. Damning internal Boeing communications released as part of the investigations showed senior employees having little regard for regulators, customers and even co-workers.\n\n\"This airplane is designed by clowns, who are in turn supervised by monkeys\", an internal communications revealed. In another message by an employee in 2018, \"I still haven't been forgiven by God for the covering up I did last year\" apparently in reference to interactions with the Federal Aviation Administration (FAA).\n\nFor now, after a series of stunning revelations, ouster of its hitherto wall street darling CEO, Dennis Muilenburg, and a projected whopping $18 billion in cost associated with the grounding of 737 Max , the chapter appears to be closing with FAA finally lifting the suspension order for 737 Max. Question remains however, if Boeing can once again soar above the clouds. One thing for sure though, is that the incident has left a indelible mark on Boeing's once unblemished reputation - in Axios Harris Poll, Boeing's reputation ranking dropped from #19 in 2019 to #84 in 2020, registering a steep decline of 65 spots. Boeing is certainly a far cry from the engineering marvel it once was.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<color=\"red\"><size=\"25\"><i>In sum, remember the 3Fs of reputation</i></size>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H1\">It affects the <color=\"red\">F</color>UTURE</style>\n\nThe 737 Max saga is estimated to cost Boeing a whopping $18 billion",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H1\">It is <color=\"red\">F</color>RAGILE</style>\n\nReputation is fragile. Boeing has built up its reputation over a century, only to see it slide down the ladder within a short span of 1 year ",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H1\">It is hard to <color=\"red\">F</color>IX</style>\n\nBoeing's emphasis of profits and market share over safety raises huge concerns over \"Ethics\" and \"Trust\" and has severely dented its once venerable reputation. Its reputation ranking dropped 65 spots from #19 in 2019 to #84 in 2020",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "PS. This is an excerpt of the e-learning on Reputation Risk Training for Operations. You can check out the course on DBS Learning Hub for more details.",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. How does reputation risk come about?</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<style=\"H1\">3 Determinants of Reputation Risk</style>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">Reputation-reality gap</style></b>\n\nRecognise that reputation is a matter of perception among various stakeholders. The actual behaviour or character can be better or worse.\nWhen reputation of a company > underlying reality, gap poses a substantial risk",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">Changing beliefs and expectations</style></b>\n\nWhen expectations are shifting and the company's character stays the same, the reputation-reality gap widens and risks increase.\nNorms evolve over time",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">Weak internal coordination</style></b>\n\nIf one group creates expectations that another group fails to meet, the company's reputation can suffer.\nPoor internal coordination also inhibits a company's ability to identify changing beliefs and expectations.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">Do You Know?</style></b>\nReputation comes from the Latin word reputationem, meaning \"consideration\"Simply put, it means how you are \"considered\" by other people",
+              "highlightBG": "#5e4237",
+              "ishighlightMascot": true,
+              "highlightMascot": "Mascots/penguinQuestionMark.png",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">FOOD FOR THOUGHT</style></b>\n<color=\"red\">DBS has won numerous awards in recent years.\nThis would mean that customers would have high expectation of DBS and that we have to work hard to upkeep the Bank's reputation.</color>",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>3. How to manage reputational risk?</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "DBS adopts a 4-step approach to managing reputational risk - prevent, detect, escalate and respond.\nEmphasis is on embedding ethical behaviours and sound practices. <b>PRIDE! Value</b> should guide the employees in all their undertakings",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "ReputationalRisk/ReputationalRisk.png",
+              "video": "",
+              "imageSource": "DBS' Group Reputation Risk Management <b>POLICY</b>",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">Pride</style></b>\nDBS Group's reputation is its most valuable asset.\n\nTo preserve and enhance Group's reputation, it\na) embraces sound corporate values that embed ethical behaviours and practices throughout the Group, and\nb) manages reputational risk and stakeholders' perception through robust policies and processes.\n\nThe Group adopts a zero tolerance mindset for reputational risk that can endanger our franchise.",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> We should be concerned about reputation risk because?",
+          "options": [
+            {
+              "option": "It affects the Future"
+            },
+            {
+              "option": "It is Fragile"
+            },
+            {
+              "option": "It is hard to Fix"
+            },
+            {
+              "option": "All of the above"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "4"
+            }
+          ],
+          "feedback": "<#3ab87a>All of the above.</color>\nRecall the 3Fs of reputation."
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q2.</b></color> Reputation risk comes about because of ",
+          "options": [
+            {
+              "option": "Reputation-reality gap and weak internal coordination"
+            },
+            {
+              "option": "High level of beliefs and expectations"
+            },
+            {
+              "option": "High level of beliefs and expectations and extensive news coverage"
+            },
+            {
+              "option": "Reputation-reality gap, changing beliefs and expectations and weak internal coordination"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "4"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>Breaks Monitoring</b></size>",
+      "gridNumber": "3",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nThis relates to the risk event on incorrect processing of sell orders for client shares, where Ops staff failed to investigate and escalate identified breaks identified during the pre-settlement cash reconciliation, and also made the wrong assumption that the resultant stock holding reconciliation break was due to system issue, eventually resulting in a significant loss.",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. What happened?</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<b>Case Studyy</b>\n\nIn 2018, a retail customer placed an order to sell 2,000 ABC shares with a dealer in SG. The dealer correctly  executed the sell order through the trading interface owned by broker but erroneously conveyed it as a Buy order to Ops.\n\nThe discrepancy was identified during the pre-settlement broker cash reconciliation between internal system and broker records but not followed up. Subsequently, stock holding differences in the weekly stock reconciliation was detected but Ops staff incorrectly assumed that this was due to an (unrelated) system issue at that time and thus no further actions were taken. The break was also not reported in the monthly KRIs.\n\nAs the break persisted, in Oct 2020, this was escalated to Tech for investigation and the incorrect booking was only discovered then, resulting in a substantial loss in buying back the shortfall in ABC shares.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">Lessons learned:</style></b>\nAll breaks need to be investigated, reported and escalated to the management timel. No assumptions should be made. ",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "Mascots/penguinBook.png",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. Break Monitoring</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "The case study shows the importance of monitoring breaks and ensuring that the differences are promptly investigated and resolved. In ops, such breaks in transaction processing as part of key ops risk metrics being monitored. Other categories of metrics being monitored include GL Account breaks, Internal Account as well as Customer Service.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">Transaction Processing Breaks</style></b>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H3\">Internal & External Reconciliation Breaks</style></b>\n\nTo review outstanding reconciliation differences at month-end arising from reconciliation differences\n(1) <b><i>for External Reconciliation,</b></i> between internal and external non-DBS records and\n(2) <b><i>for Internal Reconciliation,</b></i> between internal records or processing systems (excluding GL breaks between source system and GL)",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H3\">Fails</style></b>\n\nTo review trades with settlement failures to ascertain that the root causes are not due to processing errors or control failures by Ops units.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><b><style=\"H3\">Confirmations</style></b>\n\nTo review:\n(1) outstanding confirmations not issued\n(2) long aged outstanding trade economics not affirmed\n(3) long aged outstanding trade confirmations not affirmed.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><b><style=\"H3\">Documentation Breaks</style></b>\n\nTo review long aged outstanding documentation which have not been obtained. These include:\n(1) Trade documentation (not related to mortgages)\n(2) Non-trade documentation (not related to mortgages)\n(3) Mortgage documentation.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H3\">Returned Mails</style></b>\n\nTo monitor the % of returned items mailed to customers to ensure they are within tolerable thresholds to minimise fraud, and regulatory non-compliance.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H3\">Nostro Exceptions</style></b>\n\nTo review breaks/differences in GL Nostro accounts vs. the nostro agents statements which remained outstanding at the end of the month.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> For the Case Study in question, the review of pre-settlement broker cash reconciliation is an example of ",
+          "options": [
+            {
+              "option": "internal reconciliation break"
+            },
+            {
+              "option": "external reconciliation break"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q2.</b></color> It is important to monitor for breaks to",
+          "options": [
+            {
+              "option": "ensure accuracy and completeness of transactions recorded"
+            },
+            {
+              "option": "detect fraudulent activities"
+            },
+            {
+              "option": "ensure accurate reflection of the bank's state of affairs"
+            },
+            {
+              "option": "all of the above"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "4"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q3.</b></color> All breaks need to be promptly investigated and properly accounted for. Where unsure of the cause of discrepancy, staff should promptly escalate the issue to supervisor. No assumption should be made.",
+          "options": [
+            {
+              "option": "True"
+            },
+            {
+              "option": "False"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "1"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>Deepfake</b></size>\nSo what is deepfake? Should it be something that we should be concerned with? Check out this learning and find out for yourself how easy or difficult it is to distinguish between what's real or fake.",
+      "gridNumber": "4",
+      "isUnMarked": true,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        },
+        {
+          "isContent": false,
+          "content": "",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": true,
+          "video": "",
+          "videoContent": "Watch this introductory video",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        },
+        {
+          "isContent": true,
+          "content": "A deepfake refers to a specific kind of synthetic media where a person in an image or video is swapped with another person's likeness. In more recent examples, deepfakes can be a voice that sounds like your boss on the other end of a phone line.",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. Case Study</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "In March 2019, the CEO of a U.K-based energy firm listened over the phone as his boss - the leader of the firm's German parent company - ordered the urgent transfer of \u20AC220,000 to a supplier in Hungary. News reports would later detail that the CEO recognized the \"<link=\"https://www.wsj.com/articles/fraudsters-use-ai-to-mimic-ceos-voice-in-unusual-cybercrime-case-11567157402\"><u>slight German accent and the melody</u></link>\" of his chief's voice and followed the order to transfer the money [equivalent to about $243,000] within an hour.\n\nIt turns out that the this was a fraud and it was believed that the thieves used artificial intelligence to create a deepfake of the German executive's voice.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. How do you spot deepfake?</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "Deepfakes can be very convincing and hard to detect. However, there are certain pointers for one to look out for:",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "DeepFake/DeepFake.jpg",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<sprite=0> Pay attention to the face. High-end deep fake manipulations are almost always facial transformation\n\n<sprite=1> Pay attention to the cheeks and forehead. Does the skin appear too smooth or too wrinkly? Is the agedness of the skin similar to the agedness of the hair and eyes? DeepFakes are often incongruent on some dimensions\n\n<sprite=2> Pay attention to the eyes and eyebrows. Do shadows appear in places that you would expect? DeepFakes often fail to fully represent the natural physics of a scene\n\n<sprite=3> (If there's glasses) Pay attention to the glasses. Is there too much glare? Does the angle of the glare change when the person moves? Once again, DeepFakes often fail to fully represent the natural physics of lighting\n\n<sprite=4> Pay attention to the facial hair or lack thereof. Does this facial hair look real? DeepFakes might add or remove a mustache, sideburns, or beard. But DeepFakes often fail to make facial hair transformation fully natural\n\n<sprite=5> Pay attention to the facial moles. Does the mole look real?\n\n<sprite=6> Pay attention to blinking. Does the person blink enough or to much?\n\n<sprite=7> Pay attention to the size and color of the lips. Does the size and color match the rest of the person's face?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>3: So what can we do?</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "Since seeing and hearing is no longer enough,",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\"><b>Have a healthy dose of scepticism</b></style>\n\nTrain your immune system. Always ask: where did the image/ video come from, who is sending this to you etc",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\"><b>Always Validate!</b></style>\n\nFor instance, for the case mentioned earlier, one simple mitigating measure would be for the call recipient to hang up and call back.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "image-singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> Challenge yourself! Can you tell which of these videos are deepfake?",
+          "options": [
+            {
+              "option": "Real"
+            },
+            {
+              "option": "Fake"
+            }
+          ],
+          "image": "Deepfake/Ques1.png",
+          "imagePosition": "right",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "image-singlemcq",
+          "ques": "<#02caee><b>Q2.</b></color> Challenge yourself! Can you tell which of these videos are deepfake?",
+          "options": [
+            {
+              "option": "Real"
+            },
+            {
+              "option": "Fake"
+            }
+          ],
+          "image": "Deepfake/Ques2.png",
+          "imagePosition": "right",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "image-singlemcq",
+          "ques": "<#02caee><b>Q3.</b></color> Challenge yourself! Can you tell which of these videos are deepfake?",
+          "options": [
+            {
+              "option": "Real"
+            },
+            {
+              "option": "Fake"
+            }
+          ],
+          "image": "Deepfake/Ques3.png",
+          "imagePosition": "right",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "image-singlemcq",
+          "ques": "<#02caee><b>Q4.</b></color> Challenge yourself! Can you tell which of these videos are deepfake?",
+          "options": [
+            {
+              "option": "Real"
+            },
+            {
+              "option": "Fake"
+            }
+          ],
+          "image": "Deepfake/Ques4.png",
+          "imagePosition": "right",
+          "answer": [
+            {
+              "ans": "1"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "image-singlemcq",
+          "ques": "<#02caee><b>Q5.</b></color> Challenge yourself! Can you tell which of these videos are deepfake?",
+          "options": [
+            {
+              "option": "Real"
+            },
+            {
+              "option": "Fake"
+            }
+          ],
+          "image": "Deepfake/Ques5.png",
+          "imagePosition": "right",
+          "answer": [
+            {
+              "ans": "1"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "image-singlemcq",
+          "ques": "<#02caee><b>Q6.</b></color> Challenge yourself! Can you tell which of these videos are deepfake?",
+          "options": [
+            {
+              "option": "Real"
+            },
+            {
+              "option": "Fake"
+            }
+          ],
+          "image": "Deepfake/Ques6.png",
+          "imagePosition": "right",
+          "answer": [
+            {
+              "ans": "1"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>External Risk Event</b></size>\n(Citigroup payment error)",
+      "gridNumber": "6",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nIn Feb 2021, there was a federal judge ruling which sent shockwaves through Wall Street - recipients of $900m which Citigroup wired in error need not return the cash. So what was this case about, and why was it significant?",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. The Error</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "Citigroup is the administrator of a $1.8 billion term loan for the cosmetics company Revlon and transfer interest due on the loan to the creditors.\n\nOn August 11, 2020, Citigroup transferred USD$900m - an amount nearly 100 times greater, to Revlon's creditors by mistakes, paying off the exact full amount of principal and interest from its own funds.\n\nThe error was discovered within hours as part of its daily cash reconciliation process. Citigroup asked the creditors to return the funds, and some (fund management houses) refused, disagreeing that there had been a mistake and said the transfer was a repayment of the loan.\n\nCitigroup had to sue the creditors for the return of the funds in US Federal Courts. In Feb 2021, the federal judge ruled that recipients do not have to return the cash.Recipients of cash wired in error are typically required to return it. But in this case, the creditors had reasonable grounds to believe the payment was intentional, the judge wrote in his ruling. \"To believe that Citibank, one of the most sophisticated financial institutions in the world, had made a mistake that had never happened before, to the tune of nearly $1 billion, would have been borderline irrational,\" he wrote.\n\n(This case is currently pending the outcome of appeal lodged by Citigroup.)",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. Looking in detail</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<size=24>Worsening Credit Environment</size>\n<size=15><b>Circumstance</b> \"The Backdrop\"</size>\n\nRevlon was struggling with large debt load during Covid-19, when retail markets collapsed.\n\nThe loan in question was trading for less than 30 cents on the dollar, indicating that the creditors were unlikely to recoup their investment.\n\nCreditor group was also suing Revlon over collaterals allegedly pledged for the loans but were being used as collateral for other creditors",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<size=24>Maker-Checker Error</size>\n<size=15><b>People</b> \"The Actors\"</size>\n\nStaff processing the transaction was to manually adjust the share of the loan the investors owned before the interest payments were sent out. However, staff checked the wrong box on a digital payment form",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<size=24>Old Software</size>\n<size=15><b>System</b> \"The Props\"</size>\n\nReliance on an old piece of loan software requiring manual interventions.\n\nCitigroup was in the process of switching to a new loan software when the error occurred.\n\nCitigroup said \"We have put significant, additional controls in place until the new system is operational.\"",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>3. On internal controls</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "In general, there are 2 types of internal controls - preventive and detective",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<style=\"H2\"><b>Preventive</style></b>\n\nPreventive internal controls are those controls that are put in place to prevent / deter undesirable events from occurring\n\nExamples: segregation of duty, access control, proper authorisation and approval.",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<style=\"H2\"><b>Detective</style></b>\n\nDetective internal controls are those controls that are put in place to detect undesirable event that has occurred. Note that it only detect if a \"loss\" has occurred, but it does not prevent a \"loss\" from occurring.\n\nExamples: reconciliation, audit.",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "Both preventive and detective controls are important components of internal controls.\nIn Citigroup's case, the error was discovered via its detective control of daily cash reconciliation.\nHowever, as the case showed, the axiom \"prevention is better than cure\" rings true. Once money is out of the bank, there is no guarantee that it will be returned even if the recipient in question is an well regarded fund management house.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "multiplemcq",
+          "ques": "<#02caee><b>Q1.</b></color> In this Citigroup's case, the payment error occurred as a result of (tick all that is/are applicable)",
+          "options": [
+            {
+              "option": "System requiring manual intervention"
+            },
+            {
+              "option": "Maker-checker failure"
+            },
+            {
+              "option": "Deteriorating credit conditions"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "1"
+            },
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": "<#3ab87a>A & B</color>\nDeteriorating credit conditions was one reason why the group of Revlon lenders refused to return the funds, and therefore a circumstance to the risk event, but it did not cause the payment error to occur"
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q2.</b></color> 2. Payment made in error to individuals may not be recoverable, however, if it involves an institution, it will definitely be recoverable.",
+          "options": [
+            {
+              "option": "True"
+            },
+            {
+              "option": "False"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": "<#3ab87a>False</color>\nOnce money is out of the bank, there is no guarantee that it will definitely be recoverable"
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>Basic Accounting</b></size>",
+      "gridNumber": "7",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nYou may consider Accounting super boring but do you know that slightly more than 500 years ago, when an Italian monk by the name of Luca Pacioli wrote an instructional section on double-entry bookkeeping in a math encyclopaedia, it was considered revolutionary?\nAuthor Jane Gleeson-White explained in her book Double Entry: How the Merchants of Venice Created Modern Finance, \"You could itemize the profits in each account, so you knew which products you were doing well in and which you weren't. Then you could start to think about how you would change your business activities. It was just a whole revolution in the way of thinking about business and trade.\"\nOf course, the ability to have insights into the business hinges on the accuracy of information that goes into the books. A lot of us in Operations play an important role in presenting a true and fair presentation of the bank's financial statements through posting of MJEs or GLAO certification. So, let's recap on some key accounting concepts!",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        },
+        {
+          "isContent": false,
+          "content": "",
+          "isImage": true,
+          "imageBG": true,
+          "image": "BasicAccounting/BasicAccounting.png",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. The Basic Accounting Equation</b>",
+          "dropdownContent": [
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": true,
+              "image": "BasicAccounting/BasicAccounting1.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "The central thesis of accounting is that <b>a business is considered a separate entity from its owner(s)</b>.\n\nHence, if you put $100 into setting up an ice cream business, your business will have $100 of cash, but also owes you $100 for capital you put in.\nIf you borrow an additional $100 from your friend for the business, your business will now have $200 in cash (Asset) and owes a total of $200 -> $100 to your friend (Liability) and $100 to you as owner (Equity)",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "This Accounting equation <b>MUST</b> hold true: Assets = Liabilities + Equity",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<color=#00DAFC>Q.</color> How do revenue and expenses fit into this equation?\nWell, just remember that at the end of the day, the Profit & Loss of the business is borne by the owner. So, revenue less expenses (and less whatever you take out from the business, i.e. dividends) feeds into equity eventually.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. Double Entry Principle & The Nature of Accounts</b>",
+          "dropdownContent": [
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "Remember, at the end of the day, it's all about <b>BALANCE</b>",
+              "highlightBG": "#6a1954",
+              "ishighlightMascot": true,
+              "highlightMascot": "Mascots/penguinRemember.png",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "Accounting is based on the concept of <b>Double-entry</b>, where every transaction will have <b>equal and opposite entries</b> in at least 2 different accounts, known also as <b>Debits and Credits</b>. Hence, if 1 account is debited, then at least another account must be credited.\n\nThis system of <b>double-entry ensures that the Accounting Equation always balances.</b>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<color=#00DAFC>Q.</color><style=\"H2\">So how exactly do debits and credits work?</style></color>\n\nThe following video explains this pretty well!",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": true,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "Debits and Credits made easy with ADExLER",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b>In gist:</b>\n1. Every transaction consists of debit and credit of at least 2 accounts\n2. For every transaction, the total amount of debits must equal to the total amount of credits\n3. To know whether to post a debit or credit to a particular account, you need to know the  nature of the account:",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": true,
+              "image": "BasicAccounting/BasicAccounting2.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">Quick Tips</style></b>\n\n1. Just remember Assets and Expenses are DEBIT in nature. To add to it, you must go with the nature of the account, i.e. debit it.\n2. The reverse will be true for Liabilities and Revenue.",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">Remember</style></b>\n\n1. Understand the need for balance, and know that single entry, double debits, or double credits are a no-no.\n2. Know the nature of the account, in order to know whether to post debit or credit.",
+              "highlightBG": "#6a1954",
+              "ishighlightMascot": true,
+              "highlightMascot": "Mascots/penguinRemember.png",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>3. Accrual and Matching Principles</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "Other important concept in Accounting got to do with Matching principle and Accrual concept of accounting",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">MATCHING PRINCIPLE</style>\n<b>Expenses incurred should be recognized in the same period in which the related revenues are earned</b>\n\nThis is to present a more accurate picture of a firm's financial position\n1. If expenses are recognised in the wrong period, the financial statements may be greatly distorted.\n2. E.g. If expenses are recognized later than appropriate, it will result in a higher net income in the current period.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">ACCRUAL ACCOUNTING</style>\n<b>Revenue is recognized when earned, not when payment is received. Expense is recognized when incurred, not when payment is made.</b>\n\n1. The matching principle is a fundamental element of accrual accounting.\n2. E.g. If a company incurs an expense that has yet to be settled, it will still recognise the expense on the day the expense arises.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> Which of the following is INCORRECT?",
+          "options": [
+            {
+              "option": "Debit an Asset will increase the Asset"
+            },
+            {
+              "option": "Credit a Liability will increase the Liability"
+            },
+            {
+              "option": "Credit an Expense will increase the Expense"
+            },
+            {
+              "option": "Credit the Revenue will increase the Revenue"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "3"
+            }
+          ],
+          "feedback": "<#3ab87a>C</color>\nAn expense account is DEBIT in nature. Hence, to add to expense, you go along with its nature, i.e. Debit it."
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q2.</b></color> 2. Bank A extends a $100k car loan to Customer B. The correct entry/ entries would be:",
+          "options": [
+            {
+              "option": "Debit Asset - Car Loan $100k"
+            },
+            {
+              "option": "Debit Asset - Car Loan $100k, Credit Asset - Cash $100k"
+            },
+            {
+              "option": "Credit Asset - Car Loan $100k, Debit Asset - Cash $100k"
+            },
+            {
+              "option": "Debit Asset - Car Loan $100k, Debit Asset - Cash $100k"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": "<#3ab87a>B</color>\nRemember the concept of double-entry where every transaction will have equal and opposite entries (so A & D are no-no). In this case, both accounts are Assets (debit in nature), and you need to determined whether it has increased or decreased. As the Asset-Car loan has increased, it will be a debit entry. As for the Asset- Cash, it has decreased and hence it will be a credit entry."
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q2.</b></color> 3. Bank Z received an upfront fee of $30K for a 3-year syndicated loan.\nAccording to the accrual and matching concept and assuming that the fees are recognized evenly across the two years, which of the following is TRUE at the end of Year 1? ",
+          "options": [
+            {
+              "option": "$30K fee income"
+            },
+            {
+              "option": "$0 fee income; $30K unearned revenue"
+            },
+            {
+              "option": "$10K fee income; $20K unearned revenue"
+            },
+            {
+              "option": "None of the above"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "3"
+            }
+          ],
+          "feedback": "<#3ab87a>C</color>\nExplanation: Although $30K fee was received, $10K has not been earned at the end of Year 1. In accordance with the accrual principle, the income statement will only reflect $10K fee income. The remaining unearned revenue of $20K will be reflected on the balance sheet as a liability as the product has yet to be delivered to the customer.\nAccounting entry is as follows: Dr Bank (Asset) 30K Cr Fee income 10K (Revenue) Cr Unearned revenue 20K (Liability)."
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>Phishing</b></size>",
+      "gridNumber": "8",
+      "isUnMarked": true,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nDo you know that phishing scams account for about half of all fraud attacks?\nPhishing emails tricks the way our brains make decisions so we are all vulnerable to phishing attempts.\nTo safeguard ourselves, it is important to be aware of our mental tendencies and vulnerabilities. Find out more in this short learning!",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. The 2 Systems of Thinking</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "According to Nobel Prize winning psychologist and economist Daniel Kahneman, humans adopt two systems of thinking, as follows",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "Phishing/Phishing.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "Because we made thousands of decisions per min, we need (and rely) a lot of System 1 thinking to provide us with mental shortcuts to help us move through life efficiently.\nFor instance, we have a truth bias, a belief that others are more likely to tell the truth than to lie; to assume otherwise would be exhausting. But biases like this can also leave us open to unwise decisions, such as making us predisposed to assume the authenticity of an email.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. Exploitation of Mental Shortcuts</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "Phishing works by trying to get us to stay in System 1, or automatic mode of thinking. In other words, the Phishers want users to make fast instead of thoughtful decisions by manipulating victims via mental shortcuts (also known as cognitive biases).\nCheck out some of these cognitive biases subject to exploitation by phishers.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b>Halo Effect</b>\nExploiting the positive impression one has of a person, brand or product. For this, cybercriminal pretends to be a trusted entity (e.g. Google; Dropbox).",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b>Hyperbolic Discounting</b>\nExploiting the inclination to obtain immediate reward (eg, $100 discount voucher).",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b>Curiosity effect</b>\nExploiting people's tendency to know the unknown. E.g. access to some unnamed events.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b>Recency Effect</b>\nTaking advantage of one's tendency to remember recent events (eg, COVID-19 themed phishing)",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b>Authority Bias</b>\nExploiting people's bias to someone or an entity of authority (eg, CEO, government agencies)",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">Do You Know?</style></b>\n\nDo you know voice-based phishing is also known as \"Vishing\"?\nThere have been increasing instances of scammers impersonating domestic and foreign authorities, as well as technical support staff from service providers.",
+              "highlightBG": "#5e4237",
+              "ishighlightMascot": true,
+              "highlightMascot": "Mascots/penguinQuestionMark.png",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>3. So How?</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "There is no perfect technology solution to filter out phishing emails, and phishing is not going to go away, just like deception will always be present in the physical world.\n\n<b>However, we can adopt the use of shortcuts to trigger System 2 thinking.</b>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "highlightBG": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "Examples:\n1. [Where] Is it an email from an external source - [External] tag?\n2. [Who] Do I know the sender?\n3. [What] is the mail trying to influence me or playing with my emotion (e.g. offer, urgency)?\n4. [How] Does it have a link or attachment? Does it request for your personal information?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "highlightBG": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "Remember: It only takes one click to get hooked! ",
+              "highlightBG": "#6a1954",
+              "ishighlightMascot": true,
+              "highlightMascot": "Mascots/penguinRemember.png",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "text",
+          "ques": "",
+          "options": [],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": ""
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>UDMA</b></size>",
+      "gridNumber": "9",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nThis learning seeks to address common misconceptions about UDMA and UDMA identification.\nP.S. If you have not heard of UDMA at all, UDMA stands for User Developed and/or Managed application (basically, it relates to tools/applications developed and or managed by users without IT support). You should also check out the e-learning on UDMA at DBS Learning Hub or ask OneBot. UDMA is a 4-letter word that all Operations folks should know!",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. About UDMA</b>",
+          "dropdownContent": [
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "UDMA/UDMA1.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">1. Important! There can be operational risks to creating and using your own tool.</style>\nIn 2010, the British intelligence agency bugged more than one thousand wrong phones.\n\nA formatting error on a spreadsheet caused the agency to apply for data on all telephone numbers ending in \"000\" instead of the actual last three digits\n\nDue to several faulty equations in a spreadsheet (used to model risk) and a process that mandated the copying and pasting of a large number of cells, JP Morgan severely underestimated the downside of its synthetic credit portfolio, which ultimately led to the bank suffering approximately $6.5 billion in losses and fines.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "UDMA/UDMA2.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "In 2010, the British intelligence agency bugged more than one thousand wrong phones.\n\nA formatting error on a spreadsheet caused the agency to apply for data on all telephone numbers ending in \"000\" instead of the actual last three digits.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "UDMA/UDMA3.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "Due to several faulty equations in a spreadsheet (used to model risk) and a process that mandated the copying and pasting of a large number of cells, JP Morgan severely underestimated the downside of its synthetic credit portfolio, which ultimately led to the bank suffering approximately $6.5 billion in losses and fines.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">2. If true \"kiasu\", everything would have been scoped in, but that's not the case...</style>\nWe operate on risk-based approach and include only those non-IT developed/managed tools/ applications used to support on-going operations with regulatory, financial, customer impact or for critical risk reporting.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">3. Hey, UDMA is not a bad word...</style>\nOk, we know that when a tool is identified as a UDMA, there are requirements like getting approval, reviewing the controls and lodging it. But this is meant to ensure visibility of such tools used in the bank and prioritisation of IT resourcing for automation. It is also to minimise operational risks over the tool development and maintenance process.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "<color=#00DAFC>Q.</color> How do revenue and expenses fit into this equation?\nWell, just remember that at the end of the day, the Profit & Loss of the business is borne by the owner. So, revenue less expenses (and less whatever you take out from the business, i.e. dividends) feeds into equity eventually.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "Remember, we can be blind to our own mistakes. (Hey, even Intelligence agents made seemingly simple mistake!)",
+              "highlightBG": "#6a1954",
+              "ishighlightMascot": true,
+              "highlightMascot": "Mascots/penguinRemember.png",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. Common Misconceptions about UDMA Identification</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">1. UDMA involves MS Office only</style>\nNote that the scope of UDMAs does not involve just using MS Office. It can be any software.\nFor example, Office, sas, QlikView, Microsoft Access, Tableu",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">2. Spreadsheet with simple calculations will not be UDMA</style>\nWhat is considered as simple can have the potential to go wrong. Furthermore, the definition of complex can differ from person-to-person.\nAs such, rather than asking from a \"complex\" angle, always come from a \"risk\" angle and ask if the tool can have the potential to go wrong and can have impact.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">3. QlikView is Tech approved and hence not a UDMA</style>\nUDMA is not dependent on the software used. Afterall, Excel is also \"Tech approved\" software right?\nSo similarly, assess how is it used, can it go wrong, and what is the impact to decide if it should be scoped in as UDMA.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">4. If a tool is assessed as not a UDMA, then no further control is needed</style>\nIt is important to note that even if a tool is not a UDMA, there may be other risks present in the manual process. As such, it is important to consider risks across the entire process.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">5. As long as there is maker-checker, the tool need not be lodged as UDMA</style>\nAgain, consider if it can go wrong, and what is the impact if it does to decide if it should be scoped in as UDMA",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>3. What Should I Do?</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<b>Be on the Lookout!</b>, Use the 3 pointers below to help you assess if something should be considered as UDMA",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">#1. Is it a DIY tool?</style></b>\n\n1. Is it IT supported?\n2. Is it considered an application?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "Recall tool/application contains functionality (logic, decision making, workflow) or calculation. Not listing or empty form.\n(Think of it like building a \"calculator\" instead of using a \"calculator\".)",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">#2. Can it go wrong?</style></b>\n\n1. Can the tool go wrong without you noticing? \n2. Are you reliant on the tool?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "Assess whether it is possible for the tool to fail because any error is not obvious to users.\nIf so, reflect on the degree of your reliance on the tool to function as intended.",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">#3. What's the impact,</style></b>\n\n1. Customer, regulator or financial impact?\n2. Impacts Group BRMC. Group Risk Exco reporting?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "Note that not all non-IT support tool/applications used in the unit are considered UDMAs, but only if there's impact",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> I am using a tool/application that is developed by my colleague to improve efficiency in the operational process.",
+          "options": [
+            {
+              "option": "Nothing to worry about. After all, it's all for efficiency gain"
+            },
+            {
+              "option": "If it can have customer/regulatory/ financial impact, I should check if it has been/ needs to be lodged as UDMA"
+            },
+            {
+              "option": "It should be fine. The tool has been in used for as long as I can remember."
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": "<#3ab87a>B</color>\nAns A: Incorrect. As highlighted, there can be operational risks from the use of the tool and further assessment needs to be made.\nC: Incorrect. Do not assume. If unsure, please check with your team lead"
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>Know Your P&S</b></size>",
+      "gridNumber": "10",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": false,
+          "content": "",
+          "isImage": true,
+          "imageBG": true,
+          "image": "KnowyourP&S/KnowyourP&S.png",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        },
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nSome of you may think that policies are torturous, but really these set out principles which are meant to steer behaviour in making decisions towards achieving company goals.\n\nDo you know that in the bank, the term \"Policy & Standard\" is but a generic term used to describe a suite of documents to guide staff in their conduct and operations? Find out more in this learning!",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. P&S</b>",
+          "dropdownContent": [
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">Do You Know?</style></b>\nDBS established a bankwide Policy Architecture since Nov 2014, that is simple to understand and applied consistently across the Group.",
+              "highlightBG": "#5e4237",
+              "ishighlightMascot": true,
+              "highlightMascot": "Mascots/penguinQuestionMark.png",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "KnowyourP&S/P&S1.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. Where can we find them?</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "1. Easy! In Intranet homepage, under the <b>'Tools & Resources'</b> tab, look for the <b>'Business Policies</b>' section and click on <b>'Policy Repository'</b>.\n2. Or... just click on the <link=\"http://megaweb1.sgp.dbs.com/advisor/policyrepository/pages/b589c65156676c6e.htm\"><u>DBS Policy Repository link</u></link> and bookmark this.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "KnowyourP&S/P&S2.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "text",
+          "ques": "<#02caee><b>Q1.</b></color> In the DBS Policy Repository, search for the T&O Risk Approval Process document (hint: search by document name).\nPaste the URL here.",
+          "options": [],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "http://megaweb1.sgp.dbs.com/advisor/policyrepository/documents/DBS-11-G-0003-GR-T-O-Risk-Approval-Process.pdf"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q2.</b></color> In the DBS Policy Repository, search for the T&O Risk Approval Process document (hint: search by document name).\nIndicate whether this is a Mandate, Policy, Standard or Guide.",
+          "options": [
+            {
+              "option": "Mandate"
+            },
+            {
+              "option": "Policy"
+            },
+            {
+              "option": "Standard"
+            },
+            {
+              "option": "Guide"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "4"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>Risk of Remote Working</b></size>",
+      "gridNumber": "11",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": false,
+          "content": "",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": true,
+          "highlightContent": "<b><style=\"H2\">Do You Know?</style></b>\n(1) The WFH protocol was first established in April 2021 based on existing policies and standards and with the underlying practices embedded in our daily operations.\n(2) Given the current pandemic situation and with many of us still working from home, it is timely that we have a refresher of the Dos and Don'ts.",
+          "highlightBG": "#5e4237",
+          "ishighlightMascot": true,
+          "highlightMascot": "Mascots/penguinQuestionMark.png"
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. Before you start...</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<color=\"green\"><b><style=\"H2\">Dos</style></b></color>\n(1) Find a quiet spot in your home where you won't be distracted and where DBS information and devices can be kept safe.\n(2) Use a private and secured Wi-Fi network you know and trust.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. When you're working...</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<color=\"green\"><b><style=\"H2\">Dos</style></b></color>\n(1) Always use DBS-issued laptop for business purpose only.\n(2) Always use our internal messaging systems (MS Teams or DBS email) or official work number to contact your colleagues.\n(3) Stick to established process & controls.\n(4) If you notice anything amiss, escalate to your manager ASAP.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<color=\"red\"><b><style=\"H2\">Don'ts</style></b></color>\n(1) Take photos or videos of info on your laptop screen.\n(2) Send corporate emails to personal email accounts.\n(3) Download DBS info onto external device.\n(4) Upload DBS info onto external website or cloud-based storage.\n(5) Divulge sensitive DBS info or username-password combinations if you receive any unexpected emails/calls.  Report suspicious emails/calls to <link=\"mailto:CERT@dbs.com\"><u>CERT@dbs.com</u></link>.\n(6) Let your family members look over your shoulder when you're working or hear your work conversations.\n(7) Schedule personal appointments during working hours. You should take leave instead.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>3. When you're not working...</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<color=\"green\"><b><style=\"H2\">Dos</style></b></color>\nAlways lock your laptop.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<color=\"red\"><b><style=\"H2\">Don'ts</style></b></color>\nLeave physical DBS materials lying around.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>4. At all times...</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<color=\"green\"><b><style=\"H2\">Dos</style></b></color>\n(1) Regularly communicate with your managers and team on work progress.\n(2) Inform your manager and BCM coordinator if you are unwell.\n(3) Abide by all safe management guidelines issued by the local authorities and the Bank.\n (4) Report any loss/ theft of IT equipment as soon as possible.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<color=\"red\"><b><style=\"H2\">Don'ts</style></b></color>\nDon't respond to any media queries on your own.  Always direct them to GSMC.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> You have just completed a prototype of a Tableau dashboard and cannot wait to show to your team to share the good news, especially since you have spent many hours working on the prototype.  You quickly take a photo on your mobile phone and shared it on WhatsApp Messenger with the rest of the team.",
+          "options": [
+            {
+              "option": "This is fine since there is dynamic watermarking. We must always celebrate success!"
+            },
+            {
+              "option": "This is not allowed.  You should never take photos or videos of info on your laptop screen."
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "multiplemcq",
+          "ques": "<#02caee><b>Q2.</b></color> You have been in back-to-back meetings since morning and only have a 30-minute window period for lunch.  Before you leave your desk and dash off for a quick bite, you should first",
+          "options": [
+            {
+              "option": "Tell your teammates or manager via MS TEAMS to let them know you will be away from your desk."
+            },
+            {
+              "option": "Lock your laptop."
+            },
+            {
+              "option": "Put away any physical company documents and not leave them lying around."
+            },
+            {
+              "option": "Block your calendar, so that no one disturbs you during your lunch."
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            },
+            {
+              "ans": "3"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q3.</b></color> If I can work from home, I can work from anywhere, be it a cafe or anywhere with a good Wi-Fi signal.",
+          "options": [
+            {
+              "option": "This is fine, so long as I can meet my deliverables."
+            },
+            {
+              "option": "This is not allowed.  Remote work is confined to the home environment (in a WFH arrangement) or satellite office in view of data leakage risks."
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>Incident Escalation</b></size>",
+      "gridNumber": "12",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nDo you know when is an incident considered a \"Major Incident\" or a \"SINP\"? Read more to find out more.",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b> 1. At A Glance</b>",
+          "dropdownContent": [
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": true,
+              "image": "IncidentEscalation/IncidentEscalation.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> What is the timeframe for internal escalation of a major incident?",
+          "options": [
+            {
+              "option": "Within 7 calendar days"
+            },
+            {
+              "option": "As soon as possible"
+            },
+            {
+              "option": "By the next business day"
+            },
+            {
+              "option": "Within 5 business days"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "image-multiplemcq",
+          "ques": "<#02caee><b>Q2.</b></color> An incident involving erroneous payment of S$500k to another bank happened on a Monday. Efforts was made to recover the funds but due to a public holiday in the week, funds was still not recovered by Friday. With reference to the diagram given, which of the following is correct?",
+          "options": [
+            {
+              "option": "Major incident escalation must be done by pt. A (i.e. 7 calendar days)"
+            },
+            {
+              "option": "Major incident escalation can only be done at pt. B (i.e. 5 business days), because if funds can be recovered on Monday, it is a \"near miss\" and do not need to be escalated"
+            },
+            {
+              "option": "There should also be additional T&O internal escalation of the major incident on an ASAP basis."
+            }
+          ],
+          "image": "IncidentEscalation/Ques2.png",
+          "imagePosition": "top",
+          "answer": [
+            {
+              "ans": "1"
+            },
+            {
+              "ans": "3"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>Offline Billing</b></size>",
+      "gridNumber": "13",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\n'Offline Billing' is a term we used within Ops to refer to billing processes that are not automated.\nFind out more in this learning, the risks involved in a billing process, and how these risks can be mitigated.",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b> 1. Steps in a Billing Process</b>",
+          "dropdownContent": [
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "OfflineBilling/OfflineBilling.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b> 2. Risk and Controls in Billing Process</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "In the previous section, we indicated that there's risks in each step of the billing process. So what are these risks, and how can these be mitigated?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">1. Initiative Billing/ Maintain Billing Schedule</style></b>\n<style=\"H3\">Initiative Billing/ Maintain Billing Schedule</style>\n\nEnsure billing instructions are clear\nEnsure billing instructions are received timely and from authorised source\nReconcile billing schedule to source of truth.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">2. Calculation of Billing Amount</style></b>\n<style=\"H3\">IIncorrect Billing Amt</style>\n\nReconcile calculation parameters and logic to source of truth",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">3. Billing Data Generation</style></b>\n<style=\"H3\">(a) Bill wrong customer (banking secrecy)\n(b) Send wrong bill\n(c) Unbiled customer.</style>\n\nReconcile customer details to source of truth\nEnsure billing data generated (billing amount etc) are reconciled per Step 1 and 2 prior to sending out\nReconcile generated billing transactions to list of billing schedule/ instructions for completeness",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">4. Payment Tracking</style></b>\n<style=\"H3\">Payment not collected</style>\n\nHave process in place to track all payment collection and aged those past due\nEnsure process in place with Finance on timing and posting of relevant GL entries",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">Billing Processes are to be Approved on Exception Basis</style></b>\n\n(1) All business and automation options have been exhausted\n(2) BU must accept the risks for billings to be done offline\n(3) Approval must be sought from T&O Senior Management in accordance with T&O Risk Approval Process\n(4) Review must be done yearly and if to remain, re-approval must be sought",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> When is the billing process considered as \"Offline Billing\"",
+          "options": [
+            {
+              "option": "When the \"Initiate Billing/ Maintain Billing Schedule\" is not automated"
+            },
+            {
+              "option": "When the \"Calculation of Billing Amount\" is not automated"
+            },
+            {
+              "option": "When the \"Billing Data Generation\" is not automated"
+            },
+            {
+              "option": "When the \"Payment Tracking\" is not automated"
+            },
+            {
+              "option": "Either of A, B, C or D above"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "5"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q2.</b></color> As long as we put in place the necessary controls, we can proceed to do Offline Billing",
+          "options": [
+            {
+              "option": "True, as long as controls are in place, it's fine"
+            },
+            {
+              "option": "False. All Offline Billing are to be approved on an exception basis"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>5W1H</b></size>",
+      "gridNumber": "14",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\n5W1H stands for \"Who, What, When, Where, Why and How\", and is used as a structured approach used to think about problem-solving.",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b> 1. An Exercise - Self Reflection!</b>",
+          "dropdownContent": [
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">Do You Know?</style></b>\n5W1H method is also known as the Kipling method and was coined after the poem by Rudyard Kipling which appeared in \"Just So Stories\" published in 1902.",
+              "highlightBG": "#5e4237",
+              "ishighlightMascot": true,
+              "highlightMascot": "Mascots/penguinQuestionMark.png",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "Read the extract of the poem on the right.",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": true,
+              "image": "5W1H/5W1H.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<b><style=\"H2\">Take a moment to ponder</style></b>\nNow that you are an adult, do you still keep the six honest serving-men working for you, or have they \"retired\" from your life?\nP.S. Rudyard Kipling was an English journalist, short-story writer, poet, and novelist. You may have heard of \"The Jungle Book\". Well, he was the author!",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b> 2. How to Use 5W1H</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "Essentially, 5W1H is used to think about various aspects of any problem so that a comprehensive solution can be devised. It is useful tool to employ when you are designing or redesigning a process.\n\nLet's look at what each of these component stand for:",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">W</b>ho</style>\n<style=\"H3\">People</style>\n\nWho are responsible? Who else needs to be responsible? Who are the hand-off parties?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">W</b>here</style>\n<style=\"H3\">Location/ Biz Practices</style>\n\nReview where along the value chain is the process-in-question? Where are the controls along the process?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">W</b>hen</style>\n<style=\"H3\">Time/ Sequence</style>\n\nLook at the sequence of the operation. When should it be performed?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">W</b>hy</style>\n<style=\"H3\">Purpose</style>\n\nWhy the process? Think about the objective it is trying to meet.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">H</b>ow</style>\n<style=\"H3\">Step/ Procedures</style>\n\nHow are the steps and controls implemented currently? Can it be done differently?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b> 3. The Flexibility of 5W1H</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "Do you know that 5W1H is flexible enough to use in all kinds of situations? Try applying this 5W1H to a meeting today!",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">W</b>hy</style>\nWhy is the meeting necessary?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">W</b>hat</style>\nWhat problem are you trying to solve? What information/ feedback do you need to solicit?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">W</b>ho</style>\nWho may have the expertise/ information relevant for the discussion? Who are affected and who do you need to obtain buy-in?",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">W</b>hen</style>\nWhen are all the critical stakeholders available? Have you sort out the necessary information to have the meeting",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">W</b>here</style>\nShould the conversation be held over email or over Webex? Should a workshop be organised? ",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<b><style=\"H2\">H</b>ow</style>\nHow should you structure the conversation? (How about using 5W1H!)",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color>Match the 5W1H component to its description\n1. Steps/ Procedures\n2. Issue\n3. People\n4. Location/ Business Practices\n5.Purpose\n6. Time/ Sequence",
+          "options": [
+            {
+              "option": "1(Why); 2(Who); 3(When); 4(Where); 5(What); 6(How) "
+            },
+            {
+              "option": "1(How); 2(What); 3(Who); 4(Where); 5(Why); 6(When)"
+            },
+            {
+              "option": "1(Where); 2(Why); 3(Who); 4(How); 5(What); 6(When)"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>Data Privacy and Responsible Use of Data</b></size>",
+      "gridNumber": "15",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nHave you ever logged into Facebook and got <i>creeped out</i> when you see that Facebook has suggested one of your colleagues as a \"friend\", even though you have not added any colleague as a \"friend\", and there is no apparent links like common friends or part of the same alumni?\n\nOr does it make your hair <u>stand</u> to know that \"On average, it is enough to know the <u>5 locations</u> that you routinely visit during a day - your home, your workplace, the gym you go to, the restaurant you go for dinner, the school where you dropped off your child - <u>to identify you among everyone on Earth</u>\", & that knowing <u>8 friends</u> on social media also makes <u>a unique YOU </u>\nIndeed, with the leap in computing power and the advancement of machine learning and artificial intelligent, there is increasing concern over how personal data are collected, used and shared.\nRecognising this, the bank has set out principles to ensure that the bank collect, use, disclose and protect Personal Data in a respectful, responsible and reasonable manner. Let's learn more about this in this learning!",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b> 1. Privacy Principles</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "The Group Privacy <link=\"http://megaweb1.sgp.dbs.com/advisor/policyrepository/documents/DBS-08-P-0003-GR-Group-Privacy-Policy.pdf\"><u>Policy</u></link> and <link=\"http://megaweb1.sgp.dbs.com/advisor/policyrepository/documents/DBS-08-S-0036-GR-Group-Privacy-Standard.pdf\"><u>Standard</u></link> set out the requirements and controls by which the bank collect, use, disclose and protect Personal Data in a respectful, responsible and reasonable manner, in line with regulatory requirements.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">Transparency</style>\nIndividual will be notified ",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">Consent</style>\nWith individual's consent (or as authorised under applicable Privacy Laws)",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">Access & Correction</style>\nIndividuals allowed access to their data to correct inaccuracies upon request (unless exceptions under applicable Privacy Laws)",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">Accurate and Relevant</style>\nEnsure Personal Data collected is accurate and complete as provided, and relevant for the purpose collected for",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">Security</style>\nEnsure Personal Data is protected through reasonable security arrangements",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">Retention</style>\nRetained according to regulatory, legal requirements and legitimate business purpose.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">Transfer and Disclosure</style>\nWhere permitted under applicable Privacy Laws, or with individual consent",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">Take a note</style>\n\nAll of us play an important part in the effort to keep Personal Data safe!",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": true,
+              "image": "DataPrivacy/DataPrivacy.png",
+              "video": "",
+              "imageSource": "Source: Group Compliance",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b> 2. Responsible Use of Data</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "Remember the Facebook - Cambridge Analytica data scandal where personal data of millions of Facebook users were obtained and used without their consent for purpose of targeted political campaign?\nHere's where our P.U.R.E guiding principles come into play to ensure that data is used responsibly",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<color=\"red\"><b><style=\"H1\">P</style></b></color>urposeful\n<color=\"red\">Data use should be Purposeful</color>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<color=\"red\"><b><style=\"H1\">U</style></b></color>nsurprising\n<color=\"red\">Data use should be expected by individuals and/or corporates </color>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<color=\"red\"><b><style=\"H1\">R</style></b></color>espectful\n<color=\"red\">Data use should be respectful, considering social norms</color>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "<color=\"red\"><b><style=\"H1\">E</style></b></color>xplainable\n<color=\"red\">Data use should be explainable and justifiable</color>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": true,
+              "content": "For more details, please see<link=\"http://megaweb1.sgp.dbs.com/advisor/policyrepository/documents/DBS-13-S-0006-GR-Responsible-Data-Use---PURE-Standard.pdf\"><u>Responsible Data Use Standard</u></link>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "<color=\"red\">5</color> Qs to ask before launching a new data use case:\n\n<color=\"red\">01</color> 01 As a customer, would you feel that the way we use their data was <b>useful?</b>\n<color=\"red\">02</color> Would you be <b>surprised</b> that your bank collected or used your data in this way you?\n<color=\"red\">03</color> Could it feel <b>disrespectful</b> or intrude into your privacy?\n<color=\"red\">04</color> Could you feel discriminated against or <b>disadvantaged</b> by the use of the data?\nFinally, do the <color=\"red\">newspaper test</color>:\n<color=\"red\">05</color> Would you, as a DBS team member, be comfortable if our use of data were reported on the front page of the newspaper?\n",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> I have access to customer information database, and I decided to use it to find the contact details of some old school friends.",
+          "options": [
+            {
+              "option": "No problem. I am just trying to reconnect with old friends."
+            },
+            {
+              "option": "False. Access to Personal Data is strictly on a need-to-know basis for work purpose."
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q2.</b></color> Do you agree with the following statement - We only need to ensure compliance with relevant law and regulation for the use of data.",
+          "options": [
+            {
+              "option": "Yes."
+            },
+            {
+              "option": "No. In addition to complying with law and regulation, we also need to ensure that data is used responsibly in line with PURE framework."
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q3.</b></color> PURE stands for?",
+          "options": [
+            {
+              "option": "<b>P</b>urposeful; <b>U</b>seful; <b>R</b>elationship-led; <b>E</b>thical"
+            },
+            {
+              "option": "<b>P</b>nsurprising; <b>U</b>seful; <b>R</b>espectful; <b>E</b>xplainable"
+            },
+            {
+              "option": "<b>P</b>rincipled; <b>U</b>seful; <b>R</b>espectful; <b>E</b>thical"
+            },
+            {
+              "option": "<b>P</b>nsurprising; <b>U</b>seful; <b>R</b>elationship-led; <b>E</b>xplainable"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>What is PROMI</b></size>",
+      "gridNumber": "21",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nThank you for participating in <b><i>BRING PROMI HOME</i></b> program. But have you wondered what does \"PROMI\" actually mean?",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        },
+        {
+          "isContent": false,
+          "content": "",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": true,
+          "highlightContent": "<b><style=\"H2\">Do You Know?</style>\n\n<b>PROMI</b> is actually the acronym of the 5 Key Risk Principles introduced in T&O back in 2019. What are the 5 Key Risk Principles? Watch the video below to find out more!",
+          "highlightBG": "#5e4237",
+          "ishighlightMascot": true,
+          "highlightMascot": "Mascots/penguinQuestionMark.png"
+        },
+        {
+          "isContent": false,
+          "content": "",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": true,
+          "video": "",
+          "videoContent": "What is PROMI Video",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> What does PROMI stand for?",
+          "options": [
+            {
+              "option": "<b>P</b>rocess & control, <b>R</b>eview & action, <b>O</b>wnership, <b>M</b>onitoring, <b>I</b>ncident escalation"
+            },
+            {
+              "option": "<b>P</b>RIDE, <b>R</b>ED, sustainable <b>O</b>utcomes, <b>M</b>ost digital, <b>I</b>nnovative"
+            },
+            {
+              "option": "<b>P</b>urposeful, <b>R</b>espectful, <b>O</b>wnership, <b>M</b>anagement, <b>I</b>ntegrity"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "1"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>UDMA OneBot</b></size>",
+      "gridNumber": "22",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": false,
+          "content": "",
+          "isImage": true,
+          "imageBG": true,
+          "image": "UDMAOneBot/UDMAOneBot.png",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        },
+        {
+          "isContent": false,
+          "content": "",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": true,
+          "highlightContent": "UDMA OneBot in MS TEAMs was launched in Q1 2021, to promote greater awareness of UDMA policy and to provide staff with an avenue for quick response to basic UDMA policy-related queries. What kind of queries? Try out the activity below to find out more!",
+          "highlightBG": "#215E2F",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> What does the ABC of Risk Culture stand for?",
+          "options": [
+            {
+              "option": "Action, Belief, Control"
+            },
+            {
+              "option": "Attitude, Behaviour, Culture"
+            },
+            {
+              "option": "Attentive, Brave, Calm"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> Which Risk Sense question should you ask yourself in Stage 2 - Identify and Assess the Risk",
+          "options": [
+            {
+              "option": "What do I observe in DBS?"
+            },
+            {
+              "option": "What is the impact to our customers, employees or the bank?"
+            },
+            {
+              "option": "Who should I discuss the matter with?"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "name": "<size=48><b>ABC of Risk Culture</b></size>",
+      "gridNumber": "23",
+      "isUnMarked": false,
+      "introduction": [
+        {
+          "isContent": true,
+          "content": "<size=24><color=#00DAFC><b>INTRODUCTION</b></color></size>\n\nRisk is Everyone's business, and everyone can play a part in creating a Positive Risk Culture in DBS.\n\nIf you have ever wondered:\n1. Why is positive risk culture important in DBS?\n2. How can we shape the risk culture in DBS?\n3. What risk attitudes and behaviours would support a positive risk culture?\n\nWatch the video to find out more!",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": false,
+          "video": "",
+          "videoContent": "",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        },
+        {
+          "isContent": false,
+          "content": "",
+          "isImage": false,
+          "imageBG": false,
+          "image": "",
+          "imageSource": "",
+          "isVideo": true,
+          "video": "",
+          "videoContent": "Why is strong risk culture important in DBS?",
+          "isHighlight": false,
+          "highlightContent": "",
+          "highlightBG": "",
+          "ishighlightMascot": false,
+          "highlightMascot": ""
+        }
+      ],
+      "dropdown": [
+        {
+          "heading": "<b>1. ABC of Risk Culture</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">What is Risk Culture?</style>\n\nOur <b>attitudes</b> towards risk shape our risk related <b>behaviour</b> and forms our risk <b>culture.</b>",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "ABCofRiskCulture/ABCofRiskCulture1.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": true,
+              "carousel": [
+                {
+                  "heading": "<size=30><b>Attitude</b></size>\nshapes behaviour",
+                  "alphabetText": "A",
+                  "content": "1. Be guided by our <b>PRIDE!</b> values\n2. Beware of key risks and what can go wrong\n3. Always do the right thing\n4. Uphold Honesty | Fairness | Integrity | Professionalism"
+                },
+                {
+                  "heading": "<size=30><b>Behaviour</b></size>\nforms culture",
+                  "alphabetText": "B",
+                  "content": "1. Abide by <b>DBS Code of Conduct</b>\n2. <b>Speak Up</b> on activity which is dishonest, illegal or unethical\n3. <b>Build good risk sense</b> by questioning out-of-norm occurrences"
+                },
+                {
+                  "heading": "<size=30><b>Culture</b></size>\nInfluences Attitudes and Behaviours",
+                  "alphabetText": "C",
+                  "content": "1. Tone from the Top sets the moral compass of DBS\n2. Accountability for actions\n3. Open and constructive engagement\n4. Incentives aligned with prudent risk-taking"
+                }
+              ]
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": true,
+              "highlightContent": "\"A positive risk culture is one where everyone at every level appropriately manages risk as an intrinsic part of their day-to-day work.\"",
+              "highlightBG": "#215E2F",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        },
+        {
+          "heading": "<b>2. Building a Risk Sense</b>",
+          "dropdownContent": [
+            {
+              "isContent": true,
+              "content": "<style=\"H2\">How can we build risk sense?</style>\n\nIn DBS, we expect you to be decisive and take ownership for your actions. Underpinning this is the assumption that the decisions you make will be ethical and based on good risk sense.\n\nYou may encounter situations where you are unsure of the appropriate action to take. Use the questions in the diagram below to build your risk sense and develop good judgement to make the right decisions.",
+              "isVideo": false,
+              "isImage": false,
+              "imageBG": false,
+              "image": "",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            },
+            {
+              "isContent": false,
+              "content": "",
+              "isVideo": false,
+              "isImage": true,
+              "imageBG": false,
+              "image": "ABCofRiskCulture/ABCofRiskCulture2.png",
+              "video": "",
+              "imageSource": "",
+              "videoText": "",
+              "isHighlight": false,
+              "highlightContent": "",
+              "highlightBG": "",
+              "ishighlightMascot": false,
+              "highlightMascot": "",
+              "isCarousel": false,
+              "carousel": []
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> What does the ABC of Risk Culture stand for?",
+          "options": [
+            {
+              "option": "Action, Belief, Control"
+            },
+            {
+              "option": "Attitude, Behaviour, Culture"
+            },
+            {
+              "option": "Attentive, Brave, Calm"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "singlemcq",
+          "ques": "<#02caee><b>Q1.</b></color> Which Risk Sense question should you ask yourself in Stage 2 - Identify and Assess the Risk",
+          "options": [
+            {
+              "option": "What do I observe in DBS?"
+            },
+            {
+              "option": "What is the impact to our customers, employees or the bank?"
+            },
+            {
+              "option": "Who should I discuss the matter with?"
+            }
+          ],
+          "image": "",
+          "imagePosition": "",
+          "answer": [
+            {
+              "ans": "2"
+            }
+          ],
+          "feedback": ""
+        }
+      ]
+    }
+  ]
+}
