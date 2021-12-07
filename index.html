@@ -1,25 +1,335 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | DBS-Promi</title>
-  </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" width=1664 height=936 style="width: 1664px; height: 936px; background: #231F20"></canvas>
-    <script src="Build/DBS Promi.loader.js"></script>
-    <script>
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/DBS Promi.data.unityweb",
-        frameworkUrl: "Build/DBS Promi.framework.js.unityweb",
-        codeUrl: "Build/DBS Promi.wasm.unityweb",
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>DBS-Promi</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/_layouts/15/init.js"></script>
+  <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
+  <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
+  <script type="text/javascript" src="/_layouts/15/sp.js"></script>
+</head>
+
+<body>
+  <div class="webgl-wrapper">
+    <div class="aspect"></div>
+    <div class="webgl-content">
+      <div id="unityContainer">
+        <canvas id="unity-canvas"
+          style="background: #231F20"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="MyLoader.js"></script>
+  <script>
+    createUnityInstance(document.querySelector("#unity-canvas"), {
+      dataUrl: "Build/DBS Promi no sharepoint.data.unityweb",
+      frameworkUrl: "Build/DBS Promi no sharepoint.framework.js.unityweb",
+      codeUrl: "Build/DBS Promi no sharepoint.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "DBS-Promi",
-        productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      companyName: "DefaultCompany",
+      productName: "DBS-Promi",
+      productVersion: "1.0",
+    }).then((unityInstance) => {
+      myGameInstance = unityInstance;
+    });
+  </script>
+
+  <script>
+
+    var siteUrl = "https://magesinstitute.sharepoint.com/sites/DBSDeployTest";
+    var assetsFolderUrl = siteUrl + "/Shared%20Documents/dbsbuild/assets/";
+    var promiGameUrl = siteUrl + "/Shared%20Documents/dbsbuild/index.aspx";
+    //var siteUrl = "https://dbs1bank.sharepoint.com/sites/PROMI";
+    //var assetsFolderUrl = siteUrl + "/SiteAssets/PROMI/assets/";
+    //var promiGameUrl = siteUrl + "/SiteAssets/PROMI/index.aspx";
+    var userName;
+    var email;
+    var upn;
+    var latestChances = 0;
+    var latestjson = "";
+
+    function LoadPlayer() {
+      var clientContext = new SP.ClientContext(siteUrl);
+      var web = clientContext.get_web();
+      var user = web.get_currentUser();
+      clientContext.load(user);
+      clientContext.executeQueryAsync(function () {
+        userName = user.get_title();
+        email = user.get_email();
+        upn = user.get_userPrincipalName();
+        console.log(userName);
+        console.log(email);
+        console.log(upn);
+        AddPlayerRecord();
+      }, function (sender, args) {
+        window.console && console.log(args.get_message());
       });
-    </script>
-  </body>
+    }
+
+    var chancesListName = "PromiScoresheet";
+
+    function AddPlayerRecord() {
+      var clientContext = new SP.ClientContext(siteUrl);
+      var oList = clientContext.get_web().get_lists().getByTitle(chancesListName);
+
+      var camlQuery = new SP.CamlQuery();
+      // Get Item using CAML Query
+      camlQuery.set_viewXml('<View><Query><Where><Eq><FieldRef Name=\'PlayerEmail\'/>' + '<Value Type=\'Text\'>' + email + '</Value></Eq></Where></Query></View>');
+      listItems = oList.getItems(camlQuery);
+      clientContext.load(listItems);
+
+      clientContext.executeQueryAsync(function () {
+        if (listItems.get_count() > 0) {
+          console.log("Item already exists");
+          var listItemEnumerator = listItems.getEnumerator();
+          while (listItemEnumerator.moveNext()) {
+            var item = listItemEnumerator.get_current();
+            myGameInstance.SendMessage('UserDataLoader', 'ReceiveJsonData', item.get_item('PlayerJson'));
+            //RetrieveTotalPledgesTaken();
+            break;
+          }
+        }
+        else {
+          AddNewPlayerRecord();
+        }
+      }, function (sender, args) {
+        console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+      });
+    }
+
+    function AddNewPlayerRecord() {
+      var clientContext = new SP.ClientContext(siteUrl);
+      var oList = clientContext.get_web().get_lists().getByTitle(chancesListName);
+      var itemCreateInfo = new SP.ListItemCreationInformation();
+      this.oListItem = oList.addItem(itemCreateInfo);
+
+      oListItem.set_item('Title', userName);
+      oListItem.set_item('PlayerEmail', email);
+      oListItem.set_item('TotalChances', 0);
+      var feedbackString = CreateFeedbackString("", "", "", "", "");
+      oListItem.set_item('PlayerFeedback', feedbackString);
+      var playerJsonData = {
+        userEmail: email,
+        chances: 0,
+        activityStatuses: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        pledgeTaken: false,
+        phishingChallengeScore: -1,
+        promiFeedback: ["", "", "", "", ""],
+        udmaOneBotAskedQuestion: "", udmaOneBotResponse: "", udmaOneBotExperience: ""
+      };
+      var playerJsonString = JSON.stringify(playerJsonData);
+      oListItem.set_item('PlayerJson', playerJsonString);
+      oListItem.update();
+      clientContext.load(oListItem);
+      clientContext.executeQueryAsync(
+        function () {
+          myGameInstance.SendMessage('UserDataLoader', 'ReceiveJsonData', playerJsonString);
+          //RetrieveTotalPledgesTaken();
+        }, function (sender, args) {
+          console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+        }
+      );
+    }
+
+    function RetrieveTotalPledgesTaken() {
+      var clientContext = new SP.ClientContext(siteUrl);
+      var oList = clientContext.get_web().get_lists().getByTitle(chancesListName);
+
+      var camlQueryPledge = new SP.CamlQuery();
+      listItems = oList.getItems(camlQueryPledge);
+      clientContext.load(listItems);
+      var totalPledges = 0;
+
+      clientContext.executeQueryAsync(function () {
+        if (listItems.get_count() > 0) {
+          myGameInstance.SendMessage('UserDataLoader', 'UpdateMaxPledgesTakenInGame', listItems.get_count());
+          console.log("Item already existsPledge");
+          var listItemEnumerator = listItems.getEnumerator();
+          while (listItemEnumerator.moveNext()) {
+            var item = listItemEnumerator.get_current();
+            var data = JSON.parse(item.get_item('PlayerJson'))
+            if (data.pledgeTaken) {
+              totalPledges++;
+            }
+          }
+        }
+        myGameInstance.SendMessage('UserDataLoader', 'UpdateTotalPledgesTakenInGame', totalPledges);
+      }, function (sender, args) {
+        console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+      });
+    }
+
+    function UpdatePlayerRecord(chances, playerjson) {
+      clientContext = new SP.ClientContext(siteUrl);
+      var oList = clientContext.get_web().get_lists().getByTitle(chancesListName);
+      latestChances = chances;
+      latestjson = playerjson;
+      // Get Item using CAML Query
+      var camlQuery = new SP.CamlQuery();
+
+      // Get Item using CAML Query
+      camlQuery.set_viewXml('<View><Query><Where><Eq><FieldRef Name=\'PlayerEmail\'/>' + '<Value Type=\'Text\'>' + email + '</Value></Eq></Where></Query></View>');
+      listItems = oList.getItems(camlQuery);
+      clientContext.load(listItems);
+      clientContext.executeQueryAsync(Function.createDelegate(this, this.OnUpdateQuerySuccess), Function.createDelegate(this, this.onQueryFailed));
+    }
+
+    function OnUpdateQuerySuccess() {
+      var jsonData = JSON.parse(latestjson);
+      var feedbackString = CreateFeedbackString(jsonData.promiFeedback[0], jsonData.promiFeedback[1], jsonData.promiFeedback[2], jsonData.promiFeedback[3], jsonData.promiFeedback[4]);
+      var listItemEnumerator = listItems.getEnumerator();
+      while (listItemEnumerator.moveNext()) {
+        var item = listItemEnumerator.get_current();
+        item.set_item('TotalChances', latestChances);
+        item.set_item('PlayerJson', latestjson);        //Commits changed properties of the list item
+        item.set_item('PlayerFeedback', feedbackString);
+        item.update();
+        break;
+      }
+
+      clientContext.executeQueryAsync(
+        function () {
+          console.log("update success");
+        }, function (sender, args) {
+          alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+        });
+    }
+
+    function SendEmail(name, sendTo, emailSubject, emailBody) {
+      const backgroundImageUrl = "https://imgpile.com/images/NAsPGu.png";
+      const thankYouImageurl = "https://imgpile.com/images/NAscb4.png";
+      const penguinJumpImageUrl = "https://imgpile.com/images/NAsYXk.gif";
+      const promiLogoUrl = "https://imgpile.com/images/NAsipM.png";
+      const emailProps = {
+        To: [sendTo],
+        CC: [],
+        Subject: emailSubject + " - From: " + userName,
+        Body: "<table class=\"container\" role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"1000\" height=\"500\" align=\"center\" style=\"table-layout: fixed;\">\
+                <tr>\
+                  <td style=\"text-align: center;vertical-align: top;word-wrap: break-word; color: rgb(255,255,255);\">\
+                    ​​<!--[if gte mso 9]>\
+                      <v:rect xmlns_v=\"urn:schemas-microsoft-com:vml\" fill=\"true\" stroke=\"false\" width=\"1000\" height=\"500\" style=\"width:1000px; background-color:#B5CFE3;\">\
+                      <v:fill type=\"frame\" src=\"" + backgroundImageUrl + "\" />\
+                      <v:textbox style=\"mso-fit-shape-to-text:true\" inset=\"0,0,0,0\">\
+                    <![endif]-->\
+                    <div>\
+                      <table class=\"container\" role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"1000\" height=\"500\" align=\"center\" style=\"border: 2px solid #000000; border-collapse: collapse;\">\
+                        <tr>\
+                          <td style=\"text-align: center;vertical-align: top;word-wrap: break-word;margin-top: 30px;color: rgb(255,255,255);background:url("+ backgroundImageUrl + ") #672A87; background-size:cover; background-position:center;\">\
+                            <img alt=\"Thank you image\" src=\"" + thankYouImageurl + "\" width=\"180\" style=\"margin-top: 30px\">\
+                            <p style =\"text-align:justify;font-size:18px ; font-family: Arial, Helvetica, sans-serif;margin-left: 60px;margin-right: 60px; padding-top: 15px;\">\
+                              Thank you, " + name + ",for demonstrating Positive Risk Behaviour at work!\
+                            </p>\
+                            <p style=\"text-align:justify;font-size:18px ; font-family: Arial, Helvetica, sans-serif; margin-left: 60px;margin-right: 60px;\">" + emailBody + "</p>\
+                            <p style=\"text-align:right;font-size:18px ; font-family: Arial, Helvetica, sans-serif; margin-left:60px; margin-right: 60px;\">\
+                              Best Regards,<br>" + userName + "\
+                            </p>\
+                            <a href=\"" + promiGameUrl + "\" style=\"margin-bottom: 10px;\">\
+                              <img alt=\"Bring Promi Home Logo\" src=\"" + promiLogoUrl + "\" width=\"150\" style =\"left: 225px; padding-bottom:10px;\">\
+                            </a>\
+                            <p style=\"font-size:12px ; font-family: Arial, Helvetica, sans-serif;margin-left: 60px;margin-bottom: 20px;margin-right: 60px; \">\
+                              Brought to you by T&O-Ops COO (ORM x T&O People)\
+                            </p>\
+                        </td>\
+                        <td style=\"background: #FFFFFF; background-size:cover; background-position:center;\">\
+                          <img alt=\"PROMI Jumping\" src=\"" + penguinJumpImageUrl + "\" width=\"360\">\
+                        </td>\
+                       </tr>\
+                      </table>\
+                    </div>\
+                    <!--[if gte mso 9]></v:textbox></v:rect><![endif]-->\
+                  </td>\
+                </tr>\
+              </table>"
+      };
+      var urlTemplate = siteUrl + "/_api/SP.Utilities.Utility.SendEmail";
+      getFormDigest(siteUrl).then((data) => {
+        $.ajax({
+          contentType: 'application/json',
+          url: urlTemplate,
+          type: "POST",
+          data: JSON.stringify({
+            'properties': {
+              '__metadata': {
+                'type': 'SP.Utilities.EmailProperties'
+              },
+              'To': {
+                'results': emailProps.To
+              },
+              'Body': emailProps.Body,
+              'Subject': emailProps.Subject,
+              'CC': {
+                'results': emailProps.CC
+              },
+            }
+          }),
+          headers: {
+            "Accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": data.d.GetContextWebInformation.FormDigestValue
+          },
+          success: function (data) {
+            console.log("Email Sent");
+            myGameInstance.SendMessage('EmailSenderObject', 'ReceiveEmailResult', 1);
+          },
+          error: function (err) {
+            console.log("Got Error");
+            myGameInstance.SendMessage('EmailSenderObject', 'ReceiveEmailResult', 0);
+          }
+        });
+      });
+    }
+    var getFormDigest = (webUrl) => {
+      return $.ajax({
+        url: webUrl + "/_api/contextinfo",
+        method: "POST",
+        headers: { "Accept": "application/json; odata=verbose" }
+      });
+    }
+
+    function SetFinalDate() {
+      var finalDate = {
+        year: 2021,
+        month: 8,
+        day: 26,
+        hour: 12,
+        minute: 0,
+        second: 0
+      };
+
+      myGameInstance.SendMessage("TimeText", "SetFinalTime", JSON.stringify(finalDate));
+    }
+
+    function GetPasteFromClipboard() {
+      LoadPaste();
+    }
+
+    async function LoadPaste() {
+      const pastetext = await navigator.clipboard.readText();
+      myGameInstance.SendMessage('ClipboardHandler', 'ReceivePastedText', pastetext);
+    }
+
+    function CreateFeedbackString(answer1, answer2, answer3, answer4, answer5) {
+      var feedback = "How strongly do you agree with the following statement?\n\
+                      1. I have gained better appreciation of key risk principles and concepts\nAn> "+ answer1 + "\n\
+                      How strongly do you agree with the following statement?\n\
+                      2. I will be interested to participate in Bring PROMI Home 2.0\nAn> "+ answer2 + "\n\
+                      How strongly do you agree with the following statement?\n\
+                      3. Overall I am satisfied with Bring PROMI Home campaign\nAn> "+ answer3 + "\n\
+                      4. Which pillar of PROMI do you feel you need more training? Please indicate the specific topic(s).\nAn> "+ answer4 + "\n\
+                      5. Any other feedback\nAn> "+ answer5;
+      return feedback;
+    }
+  </script>
+</body>
+
 </html>
